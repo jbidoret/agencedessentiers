@@ -9,39 +9,12 @@
     <?php endif ?>
 
     <?php 
-      // $title_array = [];
-      // $pagetitle_words = explode(' ', $page->title()->value());
-      // foreach ($pagetitle_words as $word) {
-      //   $title_array []= preg_split('//u', $word, null, PREG_SPLIT_NO_EMPTY);
-      // }
-
-      // $classes = ["alt","swh", "til", "zag"];
-      // $title = "";
-      // $row = 1;
-      // $max = 0;
-      // foreach($title_array as $word){
-      //   $var = 0;
-      //   $startcolumn = 0;
-      //   $row += 1;
-      //   $max = max($max, count($word));
-      //   foreach($word as $letter){
-      //     $startcolumn += 1;
-      //     $var = $var + random_int(-3,3);
-      //     $c = $classes[array_rand($classes)];
-      //     $title .= "<b class='$c' style='--var:$var; --row:$row; --startcolumn: $startcolumn'>$letter</b>" ;
-      //     if( rand(0,100) > 80){
-      //       $row += 1;      
-      //     }
-      //   }
-      //   $title .= "  ";
-        
-      // }
 
       $title_array = [];
       $max = 0;
       $pagetitle_words = explode(' ', $page->title()->value());
       foreach ($pagetitle_words as $word) {
-        $title_array []= preg_split('//u', $word, null, PREG_SPLIT_NO_EMPTY);
+        $title_array []= preg_split('//u', $word, 0, PREG_SPLIT_NO_EMPTY);
       }
 
       $classes = ["alt","swh", "til", "zag"];
