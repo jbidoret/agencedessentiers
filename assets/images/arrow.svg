@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="40"
+   viewBox="0 0 4.2333333 10.583333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (1:1.2.2+202212051552+b0a8486541)"
+   sodipodi:docname="arrow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.7268041"
+     inkscape:cx="44.74482"
+     inkscape:cy="1.0577972"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-18.285273,-131.39135)">
+    <g
+       id="g2571"
+       transform="translate(0.29423451,0.21379397)">
+      <g
+         id="g1837">
+        <g
+           aria-label="i"
+           id="text186"
+           style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Suisse;-inkscape-font-specification:'Suisse Bold';stroke-width:0.264583">
+          <path
+             d="m 20.160762,136.75709 c 0,-0.45509 0.148166,-0.86784 0.391582,-1.2065 0.380999,-0.51858 0.613831,-1.16416 0.613831,-1.85208 0,-0.6985 -0.232832,-1.34408 -0.941913,-2.30716 l -0.888998,0.65617 c 0.571499,0.78316 0.719665,1.19591 0.719665,1.65099 0,0.45508 -0.148166,0.85725 -0.402166,1.19591 -0.380998,0.51859 -0.603248,1.16417 -0.603248,1.86267 0,0.69849 0.22225,1.34407 0.941914,2.30715 l 0.888997,-0.65616 c -0.571498,-0.78316 -0.719664,-1.19591 -0.719664,-1.65099 z"
+             style="font-weight:normal;font-family:ZIGZAG;-inkscape-font-specification:'ZIGZAG, Normal';font-feature-settings:aalt"
+             id="path2600" />
+        </g>
+        <g
+           id="text344"
+           style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Suisse;-inkscape-font-specification:'Suisse Bold';stroke-width:0.264583" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+           d="m 18.607521,139.65772 1.472412,1.24111 1.535954,-1.24111"
+           id="path447"
+           sodipodi:nodetypes="ccc" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -43,7 +43,13 @@ return [
     ],
     'srcsets' => [
       'default' => [300, 600, 800, 1024],
-      'cover' => [800, 1024, 1536, 2048],
+      'cover' => [
+        '400w'  => ['width' => 400, 'format' => 'webp'],
+        '800w'  => ['width' => 800, 'format' => 'webp'],
+        '1200w' => ['width' => 1200, 'format' => 'webp'],
+        '1600w' => ['width' => 1600, 'format' => 'webp']
+      ],
+      
       'square' => [
         '300vw' => [ 'width' => 300, 'height' => 300, 'crop' => 'center' ],
         '600vw' => [ 'width' => 600, 'height' => 600, 'crop' => 'center' ],

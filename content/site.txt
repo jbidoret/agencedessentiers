@@ -1,1 +1,12 @@
-Title: Site Title
+Title: L’agence des sentiers
+
+----
+
+Metadescription: 
+
+----
+
+Footer:
+
+Abonnez-vous à (link: # text: notre newsletter) ←
+Contactez-nous par e-mail → (email: hello@agencedessentiers.fr text: hello@agencedessentiers.fr).

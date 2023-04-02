@@ -12,6 +12,7 @@ return [
   'schnti.cachebuster.active' => false,
   'debug'  => true,
   'thumbs' => [
-    'bin' => '/usr/local/bin/convert'
+    'driver' => 'im',
+    'bin' => '/usr/bin/convert'
   ]
 ];

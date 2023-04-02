@@ -1,0 +1,42 @@
+@font-face { 
+  font-family: "Adelphe"; 
+  src: url("Adelphe-GerminalBold.woff") format("woff"),
+    url("Adelphe-GerminalBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face { 
+  font-family: "Adelphe"; 
+  src: url("Adelphe-GerminalBoldItalic.woff") format("woff"),
+    url("Adelphe-GerminalBoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face { 
+  font-family: "Adelphe"; 
+  src: url("Adelphe-GerminalItalic.woff") format("woff"),
+    url("Adelphe-GerminalItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face { 
+  font-family: "Adelphe"; 
+  src: url("Adelphe-GerminalRegular.woff") format("woff"),
+    url("Adelphe-GerminalRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: "Adelphe"; 
+  src: url("Adelphe-GerminalSemiBold.woff") format("woff"),
+    url("Adelphe-GerminalSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face { 
+  font-family: "Adelphe"; 
+  src: url("Adelphe-GerminalSemiBoldItalic.woff") format("woff"),
+    url("Adelphe-GerminalSemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}

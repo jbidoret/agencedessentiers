@@ -1,9 +1,22 @@
 //* fonts
-// @import "../fonts/FontFamily/FontName.css";
+@import "../fonts/zigzag/zigzag.css";
+@import "../fonts/hkg/hkg.css";
+@import "../fonts/dindong/style.css";
+@import "../fonts/amiamie/style.css";
+@import "../fonts/adelphe/style.css";
 
 :root{
   --basesize: 1.25rem;
-  --basefamily: "Times New Roman", serif;
+  --basefamily:  "Adelphe", sans-serif;
+  --altfamily: "ZigZag", sans-serif;
+  --zigzag-regular-aalt: "aalt" off; 
+  --zigzag-regular-cswh: "cswh" off; 
+  --zigzag-regular-titl: "titl" off;
+
+  --hugetextsize: clamp(1.5rem, 2vw, 2em);
+  --logosize: calc(1rem + 1.5vw);
+  --logosize: clamp(1.5rem, 2vw, 2em);
+  --menusize: clamp(1.25rem, 2vw, 1.5em);
 }
 
 body{
@@ -15,3 +28,33 @@ body{
   line-height: 1.4;  
 }
 
+.alt { --zigzag-regular-aalt: "aalt" on; }
+.swh { --zigzag-regular-cswh: "cswh" on; }
+.til { --zigzag-regular-titl: "titl" on; }
+
+@supports (font-variant-caps: titling-caps) { 
+  .til { 
+    --zigzag-regular-titl: "____"; 
+    font-variant-caps: titling-caps; 
+  }
+}
+.alt, .swh, .til { 
+  font-feature-settings: var(--zigzag-regular-aalt), var(--zigzag-regular-cswh), var(--zigzag-regular-titl); 
+}
+
+
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--altfamily); line-height: 1;}
+
+
+@media (max-width:650px) {
+  :root{
+    --basesize: 1.15rem;
+  }
+}
+
+@media (max-width:450px) {
+  :root{
+    --basesize: 1.05rem;
+  }
+}

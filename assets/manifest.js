@@ -24,7 +24,8 @@ module.exports.pluginStyles = [
  * their order of concatenation.
  */
 module.exports.userScripts = [
-  'assets/js/main.js'
+  'assets/js/main.js',
+  // 'assets/js/sizes.js',
 ];
 
 /* Name your LESS config file to load.
@@ -39,4 +40,4 @@ module.exports.userStyles = [
  * write your local dev url in the localDevUrl variable.
  * module.exports.localDevUrl = 'http://localhost/your-project/';
  */
-module.exports.localDevUrl = 'http://localhost/';
+module.exports.localDevUrl = 'http://localhost/agencedessentiers';

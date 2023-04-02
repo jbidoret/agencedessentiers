@@ -6,5 +6,45 @@
 //   etc.
 
 body {
-  margin: 0;
+  margin: var(--outerspace);
+}
+
+.page {
+  display: grid;
+  grid-template-columns: calc(var(--logosize) * 3) 1fr min-content;
+  grid-template-areas: "header main nav";
+  grid-gap: var(--innerspace);
+  align-items: self-start;
+}
+
+#header {
+  position: fixed;
+  left: var(--outerspace);
+  bottom: var(--outerspace);
+}
+main {
+  grid-area: main;
+  position: relative;
+}
+nav {
+  grid-area: nav;
+}
+
+
+
+@media (max-width:900px) {
+  .page {
+    grid-template-columns: calc(var(--logosize) * 3) 1fr ;
+    grid-template-areas: "nav nav" "header main";
+    grid-gap: var(--outerspace);
+  }
+}
+
+
+@media (max-width:650px) {
+  .page {
+    grid-template-columns: 1fr ;
+    grid-template-areas: "header" "nav" "main";
+    grid-gap: calc(var(--innerspace) * 2/3);
+  }
 }

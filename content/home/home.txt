@@ -1,8 +1,29 @@
-Title: Home !
+Title: Accueil
 
 ----
 
-Text: 
+Introduction: L’Agence des Sentiers œuvre à la création d’itinéraires de randonnée dans les villes du monde.
+
+----
+
+Text:
+
+Dans une période de recomposition profonde des rapports entre ville et campagne, et de renouvellement de l’art de faire des villes, la redécouverte de nos territoires de vie est une étape indispensable. 
+
+Sans itinéraires de randonnée, les habitants d’une ville ne peuvent en effet arpenter de façon agréable leurs territoires urbains ; car ils n’ont pas été prévus pour le piéton.
+
+L’Agence des Sentiers invite à sortir de l’autoroute – à passer en dessous, au bord de la rivière qu’on avait oubliée. Ne surestimant pas les vertus de la planification, elle invite à découvrir et renforcer par la marche les dynamiques d’auto-organisation des territoires. 
+
+L’Agence des Sentiers invite par la marche à préparer la descente énergétique des villes de demain – et à infléchir la pratique de l’urbanisme.
+
+Fondée par Baptiste Lanaspeze et Paul-Hervé Lavessière en 2014, l’Agence produit également des livres et des expositions et anime le réseau international des sentiers métropolitains. Elle a créé un centre de formation en 2021 et développe également une activité de prospective territoriale.
+
+L’agence est structurée en 5 pôles :
+- la (link: creation-de-sentiers text: création de sentiers)
+- l’animation du (link: https://metropolitantrails.org text: réseau des Sentiers métropolitains)
+- la (link: livres-et-expositions text: production de livres et d’exposition)
+- la (link: centre-de-formation text: formation)
+- le projet (link: https://villes-terrestres.org/ text: Villes terrestres)
 
 ----
 
@@ -10,4 +31,20 @@ Metadescription:
 
 ----
 
-Metaimage:
+Palette:
+
+accentcolor: '#829909'
+altcolor: '#313616'
+key: home
+
+----
+
+Cover: - file://mtRf2fCmYT7kOEv5
+
+----
+
+Metaimage: 
+
+----
+
+Uuid: GS8olhImAo5bjVes

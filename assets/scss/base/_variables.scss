@@ -1,0 +1,17 @@
+:root {
+  --outerspace: 50px;
+  --innerspace: 50px;
+}
+@media (max-width:1250px) {
+  :root {
+    --outerspace: 30px;
+    --innerspace: 60px;
+  }
+}
+
+@media (max-width:650px) {
+  :root {
+    --outerspace: 15px;
+    --innerspace: 60px;
+  }
+}

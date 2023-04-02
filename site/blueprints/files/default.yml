@@ -12,12 +12,6 @@ columns:
           alt:
             label: Alternative textuelle
             type: text
-          is_big:
-            label : Grande taille ?
-            type: toggle
-            text:
-              - Non
-              - Oui
 
   - width: 1/2
     sections:

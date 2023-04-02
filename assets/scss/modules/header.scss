@@ -1,0 +1,43 @@
+#header  {
+  h1 {
+    --zigzag-regular-aalt: "aalt" on;
+    font-size: var(--logosize);
+    margin: 0;
+  }
+  a {
+    display: flex;
+    flex-direction: row;
+    gap: .25em;
+  }
+  b {
+    font-feature-settings: var(--zigzag-regular-aalt), var(--zigzag-regular-cswh), var(--zigzag-regular-titl); 
+    font-style: normal;
+    font-weight: normal;
+    display: block;
+    line-height: 1;
+    --zigzag-regular-aalt: "aalt" off;
+    --zigzag-regular-cswh: "cswh" off;
+    text-align: center;
+  }
+  span {
+    line-height: 1;
+    font-feature-settings: var(--zigzag-regular-aalt), var(--zigzag-regular-cswh), var(--zigzag-regular-titl);     
+  }
+  .des { padding-top: 6em; }
+  .sentiers { padding-top: 5em; }
+
+  @media (max-width:650px) {
+    position: static;
+    a { flex-direction: column; margin-top: .5em;}
+    .des { padding-top: 0; padding-left: 1em; }
+    .sentiers { padding-top: 0; padding-left: 2em; }
+    b { display: inline-block; }
+    span { display: flex; margin-top: -0.45em;}
+    @for $i from 0 through 10 {
+      b:nth-child(#{$i}) {
+        // transform: translateY( calc( #{$i} * .075em + var(--var) * .05em) );
+        margin-top:  calc( #{$i} * .075em + var(--var) * .05em) ;
+      }
+    }
+  }
+}

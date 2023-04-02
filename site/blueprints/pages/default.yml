@@ -1,8 +1,67 @@
 title: Default Page
-preset: page
-fields:
-  text:
-    label: Text
-    type: textarea
-    size: large
 
+columns :
+  - width: 2/3
+    sections:
+      data:
+        type: fields            
+        fields:
+          introduction:
+            label: Introduction
+            type: markdown
+            size: small
+          text:
+            label: Text
+            type: markdown
+            size: medium
+      pages:
+        type: pages
+        label: Pages
+        layout: cardlets
+
+  - width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          metadescription:
+            label: Description
+            type: text
+          palette:
+            type: color-palette
+            display: duo
+            label: Couleurs
+            options:
+              greens:
+                accentcolor: "#b5d00d"
+                altcolor: "#6A7B57"
+              oranges:
+                accentcolor: '#c44d32'
+                altcolor: '#ff7800'
+              spring:
+                accentcolor: '#9EA82E'
+                altcolor: '#8AACD0'
+              warm:
+                accentcolor: '#404714'
+                altcolor: '#6A7B57'
+              form:
+                accentcolor: "#db585f"
+                altcolor: "#0058AB"
+              grav:
+                accentcolor: '#538636'
+                altcolor: '#94B0E0'
+              alt:
+                accentcolor: '#728154'
+                altcolor: '#B07859'
+              home:
+                accentcolor: '#829909'
+                altcolor: '#313616'
+          cover:
+            label: Image  
+            uploads:
+              template: cover
+            type: files
+            max: 1
+      files:
+        type: files
+        label: Fichiers  

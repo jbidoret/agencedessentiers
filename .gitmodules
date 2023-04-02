@@ -7,3 +7,6 @@
 [submodule "site/plugins/kirby-markdown-field"]
 	path = site/plugins/kirby-markdown-field
 	url = https://github.com/fabianmichael/kirby-markdown-field.git
+[submodule "site/plugins/color-palette"]
+	path = site/plugins/color-palette
+	url = https://github.com/sylvainjule/kirby-color-palette.git

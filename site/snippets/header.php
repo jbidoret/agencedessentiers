@@ -17,8 +17,67 @@
     endif
   ?>
 
+  <?php
+    if($page->palette()->isNotEmpty()) {
+      $palette  = $page->palette()->yaml();
+      $altcolor = $palette["altcolor"];
+      $accentcolor = $palette["accentcolor"]; 
+    } else {
+        $accentcolor = null;
+        $altcolor = null;
+    }
+  ?>
 </head>
 <body
    data-login="<?php e($kirby->user(),'true', 'false') ?>"
    data-template="<?php echo $page->template() ?>"
-   data-intended-template="<?php echo $page->intendedTemplate() ?>">
+   data-intended-template="<?php echo $page->intendedTemplate() ?>"
+   style="--accentcolor:<?= $accentcolor ?>; --altcolor:<?= $altcolor ?>; ">
+
+
+  <div class="page">
+
+    <header id="header">
+      <h1>
+        <a href="<?= $site->url() ?>">
+        <?php 
+          $as = [["L’","A","g","e","n","c","e"], ["d","e","s"], ["S","e","n","t","i","e","r","s"]];
+          $classes = ["alt","swh", "til", "zag"];
+          
+          foreach($as as $word){
+            $var = 0;
+            echo "<span class='" . str_replace('’','', strtolower(implode("", $word))) . "'>";
+            foreach($word as $letter){
+              $var = $var + random_int(-3,3);
+              $c = $classes[array_rand($classes)];
+              echo "<b class='$c' style='--var:$var'>$letter</b>" ;
+            }
+            echo "</span>";
+          }
+        ?>
+        </a>
+      </h1>
+    </header>
+    
+    <nav id="nav">
+      <?php
+        $items = $pages->listed();
+        if($items->isNotEmpty()): ?>
+        <ul>
+          <?php foreach($items as $item): ?>
+          <li class="<?php e($item->isOpen(), ' active') ?> parent">
+            <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+            <?php
+              $children = $item->children()->listed();
+              if($children->isNotEmpty()): ?>
+            <ul>
+              <?php foreach($children as $child): ?>
+              <li class="<?php e($child->isOpen(), 'active') ?> child"><a href="<?= $child->anchorurl() ?>"><?= $child->title()->html() ?></a></li>
+              <?php endforeach ?>
+            </ul>
+            <?php endif ?>
+          </li>
+          <?php endforeach ?>
+        </ul>
+      <?php endif ?>
+    </nav>
