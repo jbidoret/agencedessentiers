@@ -26,18 +26,18 @@ nav {
   .child {
     font-family: var(--basefamily);
     text-transform: none;
-    font-size: var(--basesize);
+    font-size: calc(var(--basesize) * .85);
     margin-top: .5em;
     display: none;
   }
   .parent.active {
     position: relative;
-    transform: translateX(-.5em);
+    // transform: translateX(-.5em);
     &:after {
-      content: "";
+      // content: "";
       position: absolute;
       right: -.5em;
-      border-right: .12em solid var(--accentcolor, #000);
+      border-right: .12em solid ;
       height: calc(100% - .2em);
       top: .05em;
     }

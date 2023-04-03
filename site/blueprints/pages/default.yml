@@ -31,7 +31,7 @@ columns :
             type: text
           palette:
             type: color-palette
-            display: duo
+            display: single
             label: Couleurs
             options:
               greens:
@@ -47,17 +47,22 @@ columns :
                 accentcolor: '#404714'
                 altcolor: '#6A7B57'
               form:
-                accentcolor: "#db585f"
+                accentcolor: "#71b539"
                 altcolor: "#0058AB"
               grav:
                 accentcolor: '#538636'
                 altcolor: '#94B0E0'
               alt:
-                accentcolor: '#728154'
-                altcolor: '#B07859'
+                accentcolor: '#95b752'
+                altcolor: '#E37335'
               home:
                 accentcolor: '#829909'
                 altcolor: '#313616'
+              camo:
+                accentcolor: '#6EA5C6'
+                altcolor: '#97b065'
+
+                
           cover:
             label: Image  
             uploads:

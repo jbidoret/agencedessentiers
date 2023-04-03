@@ -32,7 +32,7 @@
    data-login="<?php e($kirby->user(),'true', 'false') ?>"
    data-template="<?php echo $page->template() ?>"
    data-intended-template="<?php echo $page->intendedTemplate() ?>"
-   style="--accentcolor:<?= $accentcolor ?>; --altcolor:<?= $altcolor ?>; ">
+   style="--accentcolor:<?= $accentcolor ?>; --altcolor:<?= $altcolor ?>; --colorscheme: '<?= $palette['key'] ?>' ">
 
 
   <div class="page">

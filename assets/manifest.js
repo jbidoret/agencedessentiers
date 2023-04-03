@@ -10,22 +10,21 @@ User settings for GUlp
  * to define their loading order.
  */
 module.exports.pluginScripts = [
-  // 'node_modules/lib/dist/lib.js',
+  'assets/js/flickity.js'
 ];
 
 /* List all the Styles plugin files you are using in `pluginStyles`
  * to define their loading order.
  */
 module.exports.pluginStyles = [
-  // 'node_modules/lib/css/lib.css'
+  'assets/js/flickity.css'
 ];
 
 /* List all your JavaScript file in `userScripts` to define
  * their order of concatenation.
  */
 module.exports.userScripts = [
-  'assets/js/main.js',
-  // 'assets/js/sizes.js',
+  'assets/js/main.js'
 ];
 
 /* Name your LESS config file to load.

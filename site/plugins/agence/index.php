@@ -8,7 +8,20 @@ Kirby::plugin('agence/ktags', [
                     return '<audio controls class="audio"><source src="' . $audioFile->url()  . '" type="audio/mpeg"></source></audio>';
                 }
             }
-        ]
+          ], 
+          'gallery' => [
+            'html' => function($tag) {
+              
+              $rawimages = explode(' ', $tag->value());
+              $images = [];
+              foreach ($rawimages as $image) {
+                $images []= $tag->file($image);
+              }
+              $gallery = snippet('gallery', ['images' => $images], true);
+              return $gallery;
+      
+            }
+          ]
     ],
     'pageMethods' => [
         'getTemplateName' => function(){

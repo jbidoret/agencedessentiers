@@ -32,3 +32,17 @@ window.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", resize, false);
   resize();
 });
+
+
+
+var galleries = document.querySelectorAll(".gallery"); 
+
+galleries.forEach(gallery => {
+  var flkty = new Flickity( gallery, {
+    // options
+    wrapAround: true,
+    lazyLoad: 1,
+    cellAlign: 'left',
+    contain: true
+  });
+});
