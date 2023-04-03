@@ -1,25 +1,13 @@
 title: Fichier
 
-columns:
-  - width: 1/2
-    sections:
-      content:
-        type: fields
-        fields:
-          caption:
-            label: Légende
-            type: markdown
-          alt:
-            label: Alternative textuelle
-            type: text
-
-  - width: 1/2
-    sections:
-      meta:
-        type: fields
-        fields:
-          focus:
-            label: Point central de recadrage
-            help: Utilisé pour le recadrage des images de partage sur les réseaux sociaux
-            type: focus
-            width: 1/2
+sections:
+  content:
+    type: fields
+    fields:
+      caption:
+        label: Légende & crédits
+        type: markdown
+        extends: fields/minimal
+      alt:
+        label: Alternative textuelle (description de l’image)
+        type: text

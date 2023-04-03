@@ -9,10 +9,12 @@ columns :
           introduction:
             label: Introduction
             type: markdown
+            extends: fields/md
             size: small
           text:
             label: Text
             type: markdown
+            extends: fields/md
             size: medium
       pages:
         type: pages

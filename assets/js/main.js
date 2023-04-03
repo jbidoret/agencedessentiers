@@ -1,5 +1,5 @@
 console.log(
-  "L’Agence des sentiers accueille les chemins les plus improbables, les détours les plus féconds, les curiosités les plus vives. Bienvenue !"
+  // "L’Agence des sentiers accueille les chemins les plus improbables, les détours les plus féconds, les curiosités les plus vives. Bienvenue !"
 );
 
 // highlight nav links on scroll

@@ -40,21 +40,7 @@
     <header id="header">
       <h1>
         <a href="<?= $site->url() ?>">
-        <?php 
-          $as = [["L’","A","g","e","n","c","e"], ["d","e","s"], ["S","e","n","t","i","e","r","s"]];
-          $classes = ["alt","swh", "til", "zag"];
-          
-          foreach($as as $word){
-            $var = 0;
-            echo "<span class='" . str_replace('’','', strtolower(implode("", $word))) . "'>";
-            foreach($word as $letter){
-              $var = $var + random_int(-3,3);
-              $c = $classes[array_rand($classes)];
-              echo "<b class='$c' style='--var:$var'>$letter</b>" ;
-            }
-            echo "</span>";
-          }
-        ?>
+        <?= $site->title()->blast() ?>
         </a>
       </h1>
     </header>

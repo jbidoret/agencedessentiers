@@ -75,10 +75,11 @@
 
 
 .bgcolor {
-  background-image: linear-gradient(40deg, var(--accentcolor), var(--altcolor));
+  // background-image: linear-gradient(40deg, var(--accentcolor), var(--altcolor));
   padding: 0;
   margin: 10em 0 0;
   position: relative;
+  grid-column: 2;
   figcaption {
     position: absolute;
     bottom: .5em;

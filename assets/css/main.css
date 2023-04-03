@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /* Réinitialiser le “modèle de boite”, afin que `padding` et `border` soient contenus dans le `width` d’un élément */
 @import url(../fonts/zigzag/zigzag.css);
-@import url(../fonts/hkg/hkg.css);
-@import url(../fonts/dindong/style.css);
-@import url(../fonts/amiamie/style.css);
 @import url(../fonts/adelphe/style.css);
 *, *::before, *::after {
   box-sizing: border-box; }
@@ -432,11 +429,10 @@ nav {
     font-weight: normal; }
 
 .bgcolor {
-  background-image: -webkit-linear-gradient(50deg, var(--accentcolor), var(--altcolor));
-  background-image: linear-gradient(40deg, var(--accentcolor), var(--altcolor));
   padding: 0;
   margin: 10em 0 0;
-  position: relative; }
+  position: relative;
+  grid-column: 2; }
   .bgcolor figcaption {
     position: absolute;
     bottom: .5em;

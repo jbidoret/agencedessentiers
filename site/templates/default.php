@@ -8,47 +8,10 @@
       </div>
     <?php endif ?>
 
-    <?php 
-
-      $title_array = [];
-      $max = 0;
-      $pagetitle_words = explode(' ', $page->title()->value());
-      foreach ($pagetitle_words as $word) {
-        $title_array []= preg_split('//u', $word, 0, PREG_SPLIT_NO_EMPTY);
-      }
-
-      $classes = ["alt","swh", "til", "zag"];
-      $title = "";
-      foreach($title_array as $idx => $word){
-        $var = 0;
-        $pad = random_int(0, 3 * $idx) + $idx;
-        $title .= "<span style='--pad:$pad' class='" . str_replace('’','', strtolower(implode("", $word))) . "'>";
-        foreach($word as $letter){
-          $var = $var + random_int(-3,3);
-          $c = $classes[array_rand($classes)];
-          $title .= "<b class='$c' style='--var:$var'>$letter</b>" ;
-        }
-        $title .= "</span> ";
-      }
-    ?>
-    <h1 class="gridh1" style="--max:<?= $max ?>"><?= $title ?></h1>
+    <h1 class="gridh1"><?= $page->title()->blast() ?></h1>
 
     <?php if($cover = $page->cover()->toFile()):?>
-      <figure class="bgcolor">
-        <img 
-          src="<?= $cover->thumb(['width'=> 400])->url() ?>" 
-          sizes="(min-width:960px) calc(0.71 * (100vw - 584px)), 100vw"
-          srcset="<?= $cover->srcset('cover') ?>" 
-          alt="<?= $cover ->alt() ?>">
-        <?php if($cover->caption()->isNotEmpty()):?>
-          <figcaption>
-            <details>
-              <summary><span>?</span></summary>
-              <?= $cover->caption()->kirbytext() ?>
-            </details>
-          </figcaption>
-        <?php endif ?>
-      </figure>
+      <?php snippet('figure', ["cover" => $cover]) ?>
     <?php endif ?>
 
     <?php if($page->text()->isNotEmpty()):?>
@@ -56,8 +19,12 @@
         <?= $page->text()->kirbytext() ?>
       </div>
     <?php endif ?>
+
     <?php foreach ($page->children()->listed() as $sub) :?>
       <?php if($sub->text()->isNotEmpty()):?>
+        <?php if($cover = $sub->cover()->toFile()):?>
+          <?php snippet('figure', ["cover" => $cover]) ?>
+        <?php endif ?>
         <div class="text"id="<?=$sub->slug() ?>">
           <?= $sub->text()->kirbytext() ?>
         </div>

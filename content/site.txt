@@ -2,11 +2,11 @@ Title: L’agence des sentiers
 
 ----
 
-Metadescription: 
+Metadescription: L’Agence des sentiers accompagne les collectivités, les porteurs de projets et les habitants dans la création de sentiers métropolitains.
 
 ----
 
 Footer:
 
-Abonnez-vous à (link: # text: notre newsletter) ←
-Contactez-nous par e-mail → (email: hello@agencedessentiers.fr text: hello@agencedessentiers.fr).
+Abonnez-vous à (link: # text: notre newsletter)
+Contactez-nous par e-mail (email: bonjour@agencedessentiers.fr text: bonjour@agencedessentiers.fr).
