@@ -10,20 +10,15 @@ Text: Le document n’a pas été trouvé.
 
 ----
 
-Metadescription: 
+Metadescription: Erreur 404 :)
 
 ----
 
 Palette:
 
-- '#95A3BE'
-- 
-  - '#DFE6EE'
-  - '#7D7A43'
-  - '#95A3BE'
-  - '#4D4C1C'
-  - '#9CA72F'
-  - '#8A3F44'
+accentcolor: '#829909'
+altcolor: '#313616'
+key: home
 
 ----
 

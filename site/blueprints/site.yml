@@ -18,3 +18,4 @@ columns:
           footer:
             label: Pied de page
             type: markdown
+            extends: fields/md
