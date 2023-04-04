@@ -422,6 +422,9 @@ nav {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: .2em; }
+    .default a[href*=https]::after {
+      content: "↗";
+      font-family: sans-serif; }
   .default ul, .default ol {
     padding-left: 0; }
   .default ul li {
@@ -495,9 +498,12 @@ figure details p {
 figure details[open] {
   background: white; }
 
+.intro blockquote {
+  margin: 0; }
+
 .intro p {
   font-variation-settings: "wght" 500;
-  margin: 2em 0;
+  margin: 0 0 2em;
   font-size: var(--hugetextsize);
   line-height: 1.2;
   max-width: 18em;
