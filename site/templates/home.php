@@ -8,17 +8,7 @@
     <?php endif ?>
     <a href="#par-ici" id="paricilink"><span>↓</span></a>
     <?php if($cover = $page->cover()->toFile()):?>
-      <figure class="bgcolor">
-        <img src="<?= $cover ->url() ?>" alt="<?= $cover ->alt() ?>">
-        <?php if($cover->caption()->isNotEmpty()):?>
-          <figcaption>
-            <details>
-              <summary><span>?</span></summary>
-              <?= $cover->caption()->kirbytext() ?>
-            </details>
-          </figcaption>
-        <?php endif ?>
-      </figure>
+      <?php snippet('figure', ["cover" => $cover]) ?>
     <?php endif ?>
   </div>
 
