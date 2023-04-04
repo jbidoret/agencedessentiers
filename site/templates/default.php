@@ -1,10 +1,9 @@
 <?php snippet('header') ?>
 
-
   <main class="default"  >
     <?php if($page->introduction()->isNotEmpty()):?>
-      <div class="intro">
-        <?= $page->introduction()->kirbytext() ?>
+      <div class="intro <?= r(mb_substr(trim(strip_tags($page->introduction()->kt())), 0, 1) == "«", "indent", "noindent" ) ?>">
+        <?= $page->introduction()->kirbytext()->widont()->smartypants() ?>
       </div>
     <?php endif ?>
 
