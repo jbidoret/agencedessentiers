@@ -43,12 +43,12 @@
     }
   }
   h1 { font-size: var(--logosize); color:var(--accentcolor, darkorange )}
-  h2 { font-size: 1.5em; color:var(--altcolor, darkorange )}
+  h2 { font-size: 1.5em; }
   h3 { font-family: var(--basefamily); font-size: 1em; text-transform: none; font-weight: bold; line-height: 1.4; 
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
-    text-decoration-color: var(--altcolor);
+    text-decoration-color: var(--accentcolor);
   }
   h4 { font-family: var(--basefamily); font-size: 1em; margin-bottom: .5em; text-transform: none; line-height: 1.4;  margin-top: 1em; font-weight: bold;}
   h4::after {
@@ -142,6 +142,7 @@ figure {
     position: relative;
     text-indent: -.78em;
   }
+  &.noindent p { text-indent: 0;}
   cite {
     margin-top: .5em;
     line-height: 1.25;

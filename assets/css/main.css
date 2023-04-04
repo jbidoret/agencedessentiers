@@ -288,7 +288,7 @@ nav {
   nav .child.active a,
   nav .child a:hover {
     color: black;
-    color: var(--altcolor); }
+    color: var(--accentcolor); }
 
 @media (max-width: 900px) {
   nav {
@@ -391,8 +391,7 @@ nav {
     font-size: var(--logosize);
     color: var(--accentcolor, darkorange); }
   .default h2 {
-    font-size: 1.5em;
-    color: var(--altcolor, darkorange); }
+    font-size: 1.5em; }
   .default h3 {
     font-family: var(--basefamily);
     font-size: 1em;
@@ -402,8 +401,8 @@ nav {
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
-    -webkit-text-decoration-color: var(--altcolor);
-    text-decoration-color: var(--altcolor); }
+    -webkit-text-decoration-color: var(--accentcolor);
+    text-decoration-color: var(--accentcolor); }
   .default h4 {
     font-family: var(--basefamily);
     font-size: 1em;
@@ -505,6 +504,9 @@ figure details[open] {
   z-index: 2;
   position: relative;
   text-indent: -.78em; }
+
+.intro.noindent p {
+  text-indent: 0; }
 
 .intro cite {
   margin-top: .5em;
