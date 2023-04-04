@@ -9,4 +9,4 @@ Metadescription: L’Agence des sentiers accompagne les collectivités, les port
 Footer:
 
 Abonnez-vous à (link: # text: notre newsletter)
-Contactez-nous par e-mail (email: bonjour@agencedessentiers.fr text: bonjour@agencedessentiers.fr).
+Contactez-nous par e-mail (email: contact@agencedessentiers.fr text: contact@agencedessentiers.fr).
