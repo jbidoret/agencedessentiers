@@ -33,6 +33,7 @@ nav {
   .parent.active {
     position: relative;
     // transform: translateX(-.5em);
+
     &:after {
       // content: "";
       position: absolute;
@@ -49,19 +50,24 @@ nav {
   .child a:hover {
     // text-decoration: underline;
     color: black;
-    color: var(--accentcolor);
+    color: var(--accentcolor, #829909);
   }
 }
 
 @media (max-width:900px) {
   nav{ 
-    position: static;
+    position: relative;
+    top: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 0 var(--outerspace) var(--outerspace);
+    margin:  0 calc( var(--outerspace) * -1);
     > ul {
       flex-direction: row;
-      // flex-wrap: wrap;
+      align-items: flex-start;
       text-align: left;
       gap: .5em .5em;
     }
+      li { flex: 1;}
     .parent { font-size: .85em;}
     .parent.active {
       transform: none;
@@ -80,15 +86,15 @@ nav {
 @media (max-width:650px) {
   nav {
     border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
-    margin: 0 calc( var(--outerspace) * -1);
-    padding: var(--outerspace);
-    position: sticky;
+    padding-top: var(--outerspace);
+   
+    position: static;
     top: -1px;
     z-index: 200;
     background: white;
     // display: none;
     > ul { flex-wrap: wrap;}
+    li { flex: unset;}
   }
 
 }

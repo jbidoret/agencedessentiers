@@ -288,19 +288,32 @@ nav {
   nav .child.active a,
   nav .child a:hover {
     color: black;
-    color: var(--accentcolor); }
+    color: var(--accentcolor, #829909); }
 
 @media (max-width: 900px) {
   nav {
-    position: static; }
+    position: relative;
+    top: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 0 var(--outerspace) var(--outerspace);
+    margin: 0 calc( var(--outerspace) * -1); }
     nav > ul {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
       text-align: left;
       gap: .5em .5em; }
+    nav li {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
     nav .parent {
       font-size: .85em; }
     nav .parent.active {
@@ -320,18 +333,20 @@ nav {
 @media (max-width: 650px) {
   nav {
     border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
-    margin: 0 calc( var(--outerspace) * -1);
-    padding: var(--outerspace);
-    position: -webkit-sticky;
-    position: sticky;
+    padding-top: var(--outerspace);
+    position: static;
     top: -1px;
     z-index: 200;
     background: white; }
     nav > ul {
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap; } }
+      flex-wrap: wrap; }
+    nav li {
+      -webkit-box-flex: unset;
+      -webkit-flex: unset;
+      -ms-flex: unset;
+      flex: unset; } }
 
 .default {
   display: grid;
@@ -389,7 +404,7 @@ nav {
       content: "— "; }
   .default h1 {
     font-size: var(--logosize);
-    color: var(--accentcolor, darkorange); }
+    color: var(--accentcolor, #829909); }
   .default h2 {
     font-size: 1.5em; }
   .default h3 {
@@ -401,8 +416,8 @@ nav {
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
-    -webkit-text-decoration-color: var(--accentcolor);
-    text-decoration-color: var(--accentcolor); }
+    -webkit-text-decoration-color: var(--accentcolor, #829909);
+    text-decoration-color: var(--accentcolor, #829909); }
   .default h4 {
     font-family: var(--basefamily);
     font-size: 1em;
@@ -427,6 +442,10 @@ nav {
       font-family: sans-serif; }
   .default ul, .default ol {
     padding-left: 0; }
+  .default ol {
+    list-style-position: inside; }
+  .default ol ul, .default ul ul {
+    padding-left: 1em; }
   .default ul li {
     list-style: none; }
     .default ul li::before {
@@ -679,12 +698,20 @@ footer {
   .default h1, .default h2, .default h3, .default h5 {
     text-align: left;
     max-width: none; }
-  .default h2, .default h2 + :not(h3) {
-    margin-top: 2rem; }
+  .default h2 {
+    margin-top: 2em; }
+  .default h2 + :not(h3) {
+    margin-top: 1em; }
+  .default h3 + :not(.book) {
+    margin-top: 1em; }
   figure.book {
     float: left;
     max-width: 33%;
     margin: 0 1em .25em 0; } }
+
+@media (max-width: 900px) {
+  .default h3 + h4 {
+    margin-top: 0rem !important; } }
 
 @media (max-width: 650px) {
   .intro p {
@@ -761,9 +788,6 @@ footer {
     .homeintro .intro p {
       text-indent: 0;
       margin: 0; }
-
-[data-template="home"] #header h1 {
-  color: var(--accentcolor, black); }
 
 @media (max-width: 900px) {
   .home {

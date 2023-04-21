@@ -10,3 +10,11 @@ Footer:
 
 Abonnez-vous à (link: # text: notre newsletter)
 Contactez-nous par e-mail (email: contact@agencedessentiers.fr text: contact@agencedessentiers.fr).
+
+----
+
+Palette:
+
+accentcolor: '#999999'
+altcolor: '#94B0E0'
+key: gray

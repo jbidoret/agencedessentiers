@@ -42,13 +42,13 @@
       content: "— ";
     }
   }
-  h1 { font-size: var(--logosize); color:var(--accentcolor, darkorange )}
+  h1 { font-size: var(--logosize); color:var(--accentcolor, #829909 ); }
   h2 { font-size: 1.5em; }
   h3 { font-family: var(--basefamily); font-size: 1em; text-transform: none; font-weight: bold; line-height: 1.4; 
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
-    text-decoration-color: var(--accentcolor);
+    text-decoration-color: var(--accentcolor, #829909);
   }
   h4 { font-family: var(--basefamily); font-size: 1em; margin-bottom: .5em; text-transform: none; line-height: 1.4;  margin-top: 1em; font-weight: bold;}
   h4::after {
@@ -65,6 +65,12 @@
     &[href*=https]::after{ content:"↗"; font-family: sans-serif;}
   }
   ul, ol{ padding-left: 0;}
+  ol { 
+    list-style-position: inside;
+  }
+  ol ul, ul ul {
+    padding-left: 1em;
+  }
   ul li {
     list-style: none;
     &::before {
@@ -133,7 +139,7 @@ figure {
 }
 
 .intro {
-  blockquote { margin: 0;}
+  blockquote { margin: 0; }
   p {
     font-variation-settings: "wght" 500;
     margin: 0 0 2em;
@@ -221,8 +227,15 @@ footer {
   .text { max-width: 35em;}
   .bgcolor { margin: 2em 0;}
   .default h1, .default h2, .default h3, .default h5 { text-align: left; max-width: none;}
-  .default h2, .default h2 + :not(h3) {
-    margin-top: 2rem;
+  .default h2{
+    margin-top: 2em;
+  } 
+  .default h2 + :not(h3) {
+    margin-top: 1em;
+  }
+  
+  .default h3 + :not(.book) {
+    margin-top: 1em;
   }
   figure.book {
     float: left;
@@ -231,6 +244,11 @@ footer {
   }
 }
 
+@media (max-width:900px) {
+  .default h3 + h4 {
+    margin-top: 0rem !important;
+  }
+}
 
 @media (max-width:650px) {
   

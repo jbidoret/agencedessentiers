@@ -18,8 +18,8 @@
   ?>
 
   <?php
-    if($page->palette()->isNotEmpty()) {
-      $palette  = $page->palette()->yaml();
+    if($site->palette()->isNotEmpty()) {
+      $palette  = $site->palette()->yaml();
       $altcolor = $palette["altcolor"];
       $accentcolor = $palette["accentcolor"]; 
     } else {

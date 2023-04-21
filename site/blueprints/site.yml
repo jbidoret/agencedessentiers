@@ -19,3 +19,23 @@ columns:
             label: Pied de page
             type: markdown
             extends: fields/md
+          palette:
+            type: color-palette
+            display: single
+            label: Couleur
+            options:
+              home:
+                accentcolor: '#829909'
+                altcolor: '#313616'
+              greens:
+                accentcolor: "#b5d00d"
+                altcolor: "#6A7B57"
+              form:
+                accentcolor: "#71b539"
+                altcolor: "#0058AB"
+              grav:
+                accentcolor: '#538636'
+                altcolor: '#94B0E0'
+              gray:
+                accentcolor: '#999999'
+                altcolor: '#94B0E0'

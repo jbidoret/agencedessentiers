@@ -26,47 +26,18 @@ columns :
       meta:
         type: fields
         fields:
-          metadescription:
-            label: Description
-            type: text
-          palette:
-            type: color-palette
-            display: single
-            label: Couleurs
-            options:
-              greens:
-                accentcolor: "#b5d00d"
-                altcolor: "#6A7B57"
-              oranges:
-                accentcolor: '#c44d32'
-                altcolor: '#ff7800'
-              spring:
-                accentcolor: '#9EA82E'
-                altcolor: '#8AACD0'
-              warm:
-                accentcolor: '#404714'
-                altcolor: '#6A7B57'
-              form:
-                accentcolor: "#71b539"
-                altcolor: "#0058AB"
-              grav:
-                accentcolor: '#538636'
-                altcolor: '#94B0E0'
-              alt:
-                accentcolor: '#95b752'
-                altcolor: '#E37335'
-              home:
-                accentcolor: '#829909'
-                altcolor: '#313616'
-              camo:
-                accentcolor: '#6EA5C6'
-                altcolor: '#97b065'
-
                 
           cover:
             label: Image  
             uploads:
               template: cover
+            type: files
+            max: 1
+          metadescription:
+            label: Description
+            type: text
+          metaimage:
+            label: Image de partage 
             type: files
             max: 1
       files:
