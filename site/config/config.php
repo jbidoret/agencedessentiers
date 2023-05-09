@@ -44,10 +44,10 @@ return [
     'srcsets' => [
       'default' => [300, 600, 800, 1024],
       'cover' => [
-        '400w'  => ['width' => 400, 'format' => 'webp'],
-        '800w'  => ['width' => 800, 'format' => 'webp'],
-        '1200w' => ['width' => 1200, 'format' => 'webp'],
-        '1600w' => ['width' => 1600, 'format' => 'webp']
+        '400w'  => ['width' => 400],
+        '800w'  => ['width' => 800],
+        '1200w' => ['width' => 1200],
+        '1600w' => ['width' => 1600]
       ],
       
       'square' => [

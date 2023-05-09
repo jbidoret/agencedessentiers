@@ -8,19 +8,27 @@ Introduction: L’Agence des Sentiers œuvre à la création d’itinéraires de
 
 Text:
 
-L’Agence des Sentiers invite à sortir de l’autoroute – à passer en dessous, au bord de la rivière qu’on avait oubliée. 
+L’Agence des Sentiers invite à sortir de l’autoroute – à passer en dessous, au bord de la rivière qu’on avait oubliée.
 
 Sans itinéraires de randonnée, les habitants d’une ville ne peuvent pas arpenter leurs territoires urbains, qui n’ont pas été prévus pour le piéton.
 
-Dans une période de recomposition des rapports entre ville et campagne, de renouvellement de l’art de faire des villes, la découverte collective de nos territoires de vie est une nécessité. 
+Dans une période de recomposition des rapports entre ville et campagne, de renouvellement de l’art de faire des villes, la découverte collective de nos territoires de vie est une nécessité.
 
-L’Agence des Sentiers invite à préparer la descente énergétique des villes de demain – et à infléchir la pratique de l’urbanisme. Ne surestimant pas les vertus de la planification, elle invite à découvrir et valoriser par la marche les dynamiques d’auto-organisation des territoires. 
+L’Agence des Sentiers invite à préparer la descente énergétique des villes de demain – et à infléchir la pratique de l’urbanisme. Ne surestimant pas les vertus de la planification, elle invite à découvrir et valoriser par la marche les dynamiques d’auto-organisation des territoires.
 
 Fondée en 2014, l’Agence produit des sentiers, mais aussi des livres et des expositions. Depuis 2020, elle développe une activité de formation et de prospective territoriale. Elle anime enfin le (link: https://metropolitantrails.org text: réseau international des Sentiers métropolitains).
 
 ----
 
+Cover: - file://mtRf2fCmYT7kOEv5
+
+----
+
 Metadescription: 
+
+----
+
+Metaimage: 
 
 ----
 
@@ -29,14 +37,6 @@ Palette:
 accentcolor: '#829909'
 altcolor: '#313616'
 key: home
-
-----
-
-Cover: - file://mtRf2fCmYT7kOEv5
-
-----
-
-Metaimage: 
 
 ----
 
