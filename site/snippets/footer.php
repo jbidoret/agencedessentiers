@@ -12,12 +12,7 @@
     endif
   ?>
 
-  <script>
-    // import('https://unpkg.com/responsive-image-test@0.0.1/target/index.js').then((module) => {
-    //   const image = document.querySelector('.bgcolor img');
-    //   image && module.observeSizes(image);
-    // });
-  </script>
+  <script defer data-domain="agencedessentiers.org" src="https://plausible.io/js/script.js"></script>
 
 </body>
 </html>
